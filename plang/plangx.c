@@ -59,7 +59,6 @@ int main(int argc, char* argv[]) {
                 return 1;
             case CMD_CMP:
                 printf("CMP\n");
-                printf("JNE %d %d %d\n", *((app_thread->mem) + arg1), *((app_thread->mem) + arg2));
                 *(app_thread->reg0) = *((app_thread->mem) + arg1) - *((app_thread->mem) + arg2);
                 *(app_thread->instr_ptr) += 3;
                 break;
@@ -99,8 +98,7 @@ int main(int argc, char* argv[]) {
                 *((app_thread->mem) + arg1) = arg2;
                 *(app_thread->instr_ptr) += 3;
                 break;
-                // NO OP
-            default:
+            default: // UNKNOWN OPERATION
                 *(app_thread->instr_ptr) += 1;
                 
         }
