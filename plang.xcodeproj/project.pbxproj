@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7604EF342750767D00E8941B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7604EF332750767D00E8941B /* main.c */; };
+		7604EF3C275076E500E8941B /* plangx.c in Sources */ = {isa = PBXBuildFile; fileRef = 7604EF3B275076E500E8941B /* plangx.c */; };
+		7604EF3F275076F900E8941B /* plangc.c in Sources */ = {isa = PBXBuildFile; fileRef = 7604EF3E275076F900E8941B /* plangc.c */; };
+		7604EF422750770D00E8941B /* plang.c in Sources */ = {isa = PBXBuildFile; fileRef = 7604EF412750770D00E8941B /* plang.c */; };
+		76F338E7275151490085896F /* plangmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 76F338E6275151490085896F /* plangmem.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +27,14 @@
 
 /* Begin PBXFileReference section */
 		7604EF302750767D00E8941B /* plang */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = plang; sourceTree = BUILT_PRODUCTS_DIR; };
-		7604EF332750767D00E8941B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		7604EF3A275076E500E8941B /* plangx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plangx.h; sourceTree = "<group>"; };
+		7604EF3B275076E500E8941B /* plangx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plangx.c; sourceTree = "<group>"; };
+		7604EF3D275076F900E8941B /* plangc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plangc.h; sourceTree = "<group>"; };
+		7604EF3E275076F900E8941B /* plangc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plangc.c; sourceTree = "<group>"; };
+		7604EF402750770D00E8941B /* plang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plang.h; sourceTree = "<group>"; };
+		7604EF412750770D00E8941B /* plang.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plang.c; sourceTree = "<group>"; };
+		76F338E5275151490085896F /* plangmem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plangmem.h; sourceTree = "<group>"; };
+		76F338E6275151490085896F /* plangmem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = plangmem.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,14 @@
 		7604EF322750767D00E8941B /* plang */ = {
 			isa = PBXGroup;
 			children = (
-				7604EF332750767D00E8941B /* main.c */,
+				7604EF3D275076F900E8941B /* plangc.h */,
+				7604EF3E275076F900E8941B /* plangc.c */,
+				7604EF3A275076E500E8941B /* plangx.h */,
+				7604EF3B275076E500E8941B /* plangx.c */,
+				7604EF402750770D00E8941B /* plang.h */,
+				7604EF412750770D00E8941B /* plang.c */,
+				76F338E5275151490085896F /* plangmem.h */,
+				76F338E6275151490085896F /* plangmem.c */,
 			);
 			path = plang;
 			sourceTree = "<group>";
@@ -119,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7604EF342750767D00E8941B /* main.c in Sources */,
+				76F338E7275151490085896F /* plangmem.c in Sources */,
+				7604EF422750770D00E8941B /* plang.c in Sources */,
+				7604EF3F275076F900E8941B /* plangc.c in Sources */,
+				7604EF3C275076E500E8941B /* plangx.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
